@@ -1,0 +1,39 @@
+DESCRIPTION OF THE DATA
+
+New York City - Brooklyn
+
+In order to segment the neighborhoods and explore them, we will essentially need a dataset that contains the 5 boroughs and
+the neighborhoods that exist in each borough as well as the latitude and longitude coordinates of each neighborhood.
+This dataset exists for free on the web. On the other hand, for our convenience, the file was placed it on the server, so we can
+simply run a ‘wget’ command and access the data.
+
+After downloading this dataset, we will transform it into a pandas dataframe and use the geopy library to get the latitude and longitude
+values of New York City to create a map with its neighborhoods. Then, we will cluster and segment the neighborhoods in Brooklyn to find
+the first neighborhood for the analysis.
+
+Being Bay Ridge the first neighborhood in Brooklyn, we will create the GET request URL to find the nearest venues. Also, we will
+determine which neighborhood in Brooklyn has more venues and we will group them as per category. Then, we will find the top 5 venues
+in Brooklyn in order to find insights.
+
+Toronto - Scarborough
+
+Unlike New York City, the neighborhood data is not readily available on the internet. For the Toronto neighborhood data, a Wikipedia
+page exists that has all the information we need to explore and cluster the neighborhoods in Toronto.
+
+We will scrape the Wikipedia page and wrangle the data, clean it, and then read it into a pandas dataframe. Once the data
+is in a structured format, we can replicate the analysis that we did to the New York City dataset to explore and cluster
+the neighborhoods in the city of Toronto.
+
+After the mention procedure, we will use the geopy library to get the latitude and longitude values of Toronto to create a map
+with its neighborhoods. Then, we will cluster and segment the neighborhoods in Scarborough to find the first postal code for the
+analysis.
+
+Being Malvern and Rouge the neighborhoods of the first postal code M1B in Scarborough, we will create the GET request URL to find
+the nearest venues of this postal code. On the other hand, we will determine which neighborhood in Scarborough has more venues
+and we will group them as per category. Then, we will find the top 5 venues in Scarborough in order to find insights.
+
+Brooklyn vs Scarborough
+
+Finally, by means of the insights founds in Brooklyn and Scarborough, we will determine if we can open a new business in terms
+of the people needs.
+
